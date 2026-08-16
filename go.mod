@@ -1,4 +1,4 @@
-module github.com/ivan-prykhodko/go-security
+module github.com/ivan-prykhodko/go-http-security
 
 go 1.25.0
 
