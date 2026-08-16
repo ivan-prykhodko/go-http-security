@@ -11,9 +11,9 @@ import (
 	"syscall"
 	"time"
 
-	sharedSecurity "github.com/ivan-prykhodko/go-security"
-	"github.com/ivan-prykhodko/go-security/example/app/api/resource"
-	"github.com/ivan-prykhodko/go-security/example/app/config"
+	sharedSecurity "github.com/ivan-prykhodko/go-http-security"
+	"github.com/ivan-prykhodko/go-http-security/example/app/api/resource"
+	"github.com/ivan-prykhodko/go-http-security/example/app/config"
 	"github.com/labstack/echo"
 )
 

@@ -3,7 +3,7 @@ package security
 import (
 	"net/http"
 
-	sharedSecurity "github.com/ivan-prykhodko/go-security"
+	sharedSecurity "github.com/ivan-prykhodko/go-http-security"
 )
 
 type AuthenticationHandler struct {

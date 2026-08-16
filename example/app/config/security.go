@@ -1,9 +1,9 @@
 package config
 
 import (
-	sharedSecurity "github.com/ivan-prykhodko/go-security"
-	appSecurity "github.com/ivan-prykhodko/go-security/example/app/security"
-	"github.com/ivan-prykhodko/go-security/example/app/security/voter"
+	sharedSecurity "github.com/ivan-prykhodko/go-http-security"
+	appSecurity "github.com/ivan-prykhodko/go-http-security/example/app/security"
+	"github.com/ivan-prykhodko/go-http-security/example/app/security/voter"
 	"github.com/labstack/echo"
 )
 

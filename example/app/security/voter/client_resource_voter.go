@@ -3,8 +3,8 @@ package voter
 import (
 	"slices"
 
-	sharedSecurity "github.com/ivan-prykhodko/go-security"
-	"github.com/ivan-prykhodko/go-security/example/app/api/resource"
+	sharedSecurity "github.com/ivan-prykhodko/go-http-security"
+	"github.com/ivan-prykhodko/go-http-security/example/app/api/resource"
 )
 
 type clientResourceVoter struct {

@@ -3,7 +3,7 @@ package security
 import (
 	"strings"
 
-	sharedSecurity "github.com/ivan-prykhodko/go-security"
+	sharedSecurity "github.com/ivan-prykhodko/go-http-security"
 )
 
 type UserProvider struct{}

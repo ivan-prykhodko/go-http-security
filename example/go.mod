@@ -1,9 +1,9 @@
-module github.com/ivan-prykhodko/go-security/example
+module github.com/ivan-prykhodko/go-http-security/example
 
 go 1.25.10
 
 require (
-	github.com/ivan-prykhodko/go-security v0.1.0
+	github.com/ivan-prykhodko/go-http-security v0.1.1
 	github.com/labstack/echo v3.3.10+incompatible
 )
 
