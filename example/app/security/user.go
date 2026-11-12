@@ -1,5 +1,13 @@
 package security
 
+type userIdAware interface {
+	Roles() []string
+}
+
+type userRolesAware interface {
+	Roles() []string
+}
+
 type User struct {
 	id         string
 	identifier string

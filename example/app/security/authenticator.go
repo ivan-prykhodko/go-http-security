@@ -1,6 +1,7 @@
 package security
 
 import (
+	"errors"
 	"net/http"
 
 	sharedSecurity "github.com/ivan-prykhodko/go-http-security"
@@ -44,7 +45,14 @@ func (a *InternalHeaderAuthenticator) CreateToken(passport sharedSecurity.Passpo
 	if err != nil {
 		return nil, err
 	}
-	var token sharedSecurity.Token = sharedSecurity.NewPostAuthenticationToken(user, user.Roles(), firewallName)
 
-	return token, nil
+	if userRolesAware, ok := user.(userRolesAware); ok {
+		return sharedSecurity.NewPostAuthenticationToken(
+			user,
+			userRolesAware.Roles(),
+			firewallName,
+		), nil
+	}
+
+	return nil, errors.New("user does not implement userRolesAware interface")
 }
